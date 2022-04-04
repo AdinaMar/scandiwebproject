@@ -1,0 +1,40 @@
+.container p{
+    cursor: pointer;
+}
+
+.dropdown-currency {
+    position: absolute;
+    width: 114px;
+    height: 259px;
+    
+    top: 65px;
+    background: #FFFFFF;
+    cursor:pointer;
+    box-shadow: 2px 2px 2px 2px  #E5E5E5;
+    z-index: 10;
+    }
+
+
+.dropdown-currency li {
+list-style: none;
+padding-bottom:20px;
+padding-right:20px;
+padding-top:5px;
+font-size: 18px;
+align-items:right;
+font-weight: 500;
+line-height: 28.8px;
+cursor:pointer;
+
+}
+.container span {
+    Width: 6px;
+Height:3px;
+position: absolute;
+left: 76.47%;
+right: 20.59%;
+top: 53.75%;
+bottom: 38.75%;
+
+border: 1px solid #000000;
+}

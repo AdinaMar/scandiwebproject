@@ -1,0 +1,43 @@
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+   margin-left: 300px;
+}
+
+.product-container .products-map link{
+  text-decoration: none;
+  list-style: none;
+}
+.product-container .card-product .products-map {
+    display: flex;
+    flex-direction: column;
+  background-color: #fff;
+  width:386px;
+height: 444px;
+padding:16px;
+
+margin-right: 40px;
+justify-content: flex-end;
+align-items: center;
+   
+}
+
+.product-container .products-map img {
+width: 356px;
+height: 338px;
+object-fit: cover;
+object-position: top;
+}
+
+.product-container .products-map p{
+font-size:18px;
+font-weight: 300;
+line-height:28px;
+line-height:28px;
+} 
+.product-container .products-map .price {
+    font-size : 18px;
+    font-weight: 500;
+}

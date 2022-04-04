@@ -1,0 +1,35 @@
+.overlay {
+    position: relative;
+}
+
+.products-map-unavaialable .overlay .outofStock {
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 356px;
+    height: 338px;
+    color: 
+    #8D8F9A;
+    font-size: 24px;
+}
+
+.products-map-unavaialable img{
+    width: 356px;
+    height: 338px;
+    object-fit: cover;
+    object-position: top;
+    opacity: 50%;
+    
+}
+.products-map-unavaialable p {
+    color: #8D8F9A;
+}
+.products-map-unavaialable .price {
+    font-weight: 500;
+}
