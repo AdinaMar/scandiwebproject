@@ -17,13 +17,16 @@ class App extends Component {
             products: [],
             category: "all",
             currencies: "USD",
-            isDropDown: false
-
+            isDropDown: false,
+            showCart: false,
+            bagItems: {}
         }
      
+        this.displayCart = this.displayCart.bind(this);
         this.drop = this.drop.bind(this);
         this.changeCurrency = this.changeCurrency.bind(this);
         this.changeCategory = this.changeCategory.bind(this);
+      
     }
       
     componentDidMount() {
@@ -57,12 +60,21 @@ class App extends Component {
         changeCategory(category) {
             if(this.props) {
                 this.setState({category: category})
-                const { data = {} }= this.props;
+                const { data = {} } = this.props;
                 categoryMain(data, category).then(res => {
                     this.setState(res)
                 })
             }
         }
+
+        displayCart() {
+            this.setState({ showCart: !this.state.showCart })
+        }
+
+addCart(item) {
+    this.setState({bagItems: {...item}})
+}
+
  render() {
 
  
@@ -76,6 +88,8 @@ class App extends Component {
                drop = {this.drop} 
                isDropDown = {this.state.isDropDown}
                changeCategory = {this.changeCategory}
+               showCart = {this.state.showCart}
+               displayCart = {this.displayCart}
                />
 
                <Switch>

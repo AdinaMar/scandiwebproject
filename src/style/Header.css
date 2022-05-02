@@ -27,7 +27,7 @@ align-items: center;
     cursor: pointer;
     font-size: 16px;
 line-height: 120%;
-font-family: 'Raleway';
+padding-top: 32px;
     padding-bottom: 32px;
     text-transform: uppercase;
     text-decoration: none;
@@ -58,6 +58,8 @@ font-family: 'Raleway';
 .currency-cart {
 display: flex;
 flex-direction: row;
+position: relative;
+
 }
 .currency-cart img {
     margin-left:20px;

@@ -1,0 +1,41 @@
+.attr-container h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+.bar > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width:63px;
+height: 45px;
+border: 1px solid #1D1F22;
+margin-right: 12px;
+font-size: 16px;
+line-height: 18px;
+padding: 14px 24px;
+}
+
+.active-attribute  {
+    background-color: #1D1F22;
+    color: white;
+}
+.bar .color{
+    display: flex;
+    flex-direction: column;
+  
+}
+.bar .color div {
+    border: 1px solid black;
+    margin-bottom: 10px;
+   
+
+}

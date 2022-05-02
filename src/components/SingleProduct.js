@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "../style/SingleProduct.css";
+import Attributes from './Attributes';
 
 export default class SingleProduct extends Component {
     constructor(props) {
@@ -37,6 +38,7 @@ return (
               
           <h2> {brand}</h2>
           <h2> {name}</h2>
+          <Attributes attributes={attributes} />
           <h3>Price:</h3>
 {
     prices.map(price => {
